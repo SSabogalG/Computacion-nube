@@ -1,4 +1,4 @@
-package handler
+package controlador
 
 import (
 	"io/ioutil"
@@ -25,7 +25,7 @@ func FolderContentsHandler(folderPath string) http.HandlerFunc {
 		}
 
 		// Create a slice of image data.
-		var imageList []model.ImageData
+		var imageList []modelo.ImageData
 		imageCount := 0
 
 		// Iterate over the files and add image data to the slice.

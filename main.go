@@ -4,12 +4,6 @@ import (
 	"flag"
 	"fmt"
 	"net/http"
-
-	//"github.com/bard/golang/image-server/handler"
-	//"github.com/bard/golang/image-server/model"
-	//"github.com"
-
-	"github.com/SSabogalG/Computacion-nube/handler"
 )
 
 func main() {
@@ -19,7 +13,7 @@ func main() {
 	flag.Parse()
 
 	// Register the folder contents handler.
-	http.HandleFunc("/", handler.FolderContentsHandler(folderPathPtr))
+	http.HandleFunc("/", controlador.FolderContentsHandler(folderPathPtr))
 
 	// Start the HTTP server.
 	addr := fmt.Sprintf(":%d", *portPtr)
