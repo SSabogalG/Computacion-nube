@@ -1,4 +1,4 @@
-package model
+package modelo
 
 type ImageData struct {
 	Name   string

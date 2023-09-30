@@ -6,8 +6,6 @@ import (
 	"os"
 	"path/filepath"
 	"text/template"
-
-	"github.com/bard/golang/image-server/model"
 )
 
 func FolderContentsHandler(folderPath string) http.HandlerFunc {
